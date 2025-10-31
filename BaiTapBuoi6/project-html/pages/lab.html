@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_Bai6</title>
+</head>
+<body>
+<h1>Phòng thí nghiệm</h1>
+<form method="GET" action="lab.html">
+    <label for="search">Tìm kiếm:</label>
+    <input type="text" id="search" name="q" placeholder="Tìm kiếm..">
+    <br><br>
+    <label>Trình độ: <input type="checkbox" name="level" value="beginner"> Beginner</label>
+    <label><input type="checkbox" name="level" value="intermediate"> Intermediate</label>
+    <label><input type="checkbox" name="level" value="advanced"> Advanced</label>
+    <br><br>
+    <label>Hình thức: <input type="radio" name="mode" value="online"> Offline</label>
+    <label><input type="radio" name="mode" value="offline"> Online</label>
+    <br><br>
+    <label for="category">Danh mục:</label>
+    <select id="category" name="source">
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="devops">DevOps</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+</body>
+</html>
