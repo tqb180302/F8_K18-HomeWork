@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<style>
+    body {
+        background-color: #e5e7eb;
+    }
+    h1{
+        background-color: #f98000;
+        color:#f9fafb;;
+    }
+    div {
+        color: #8a8888;
+    }
+/*Css Theme*/
+    input[id='light']:checked + label {
+        background-color: #fff8cc;
+        color:#8b5e00;
+    }
+    input[id='light']:checked ~ .text .light{
+        background-color: #fff8cc;
+        color:#111827;
+    }
+    input[id='dark']:checked + label{
+        background-color: #111827;
+        color:#f9fafb;
+    }
+    input[id='dark']:checked ~ .text .dark {
+        background-color: #111827;
+        color: #f9fafb;
+    }
+/*Css Color*/
+    input[id='red']:checked + label{
+        background-color: #fee2e2;
+        color:#991b1b;
+    }
+    input[id='red']:checked ~ .text .red {
+        background-color: #fee2e2;
+        color:#7f1d1d;
+    }
+    input[id='blue']:checked + label{
+        background-color: #dbeafe;
+        color:#1d4ed8;
+    }
+    input[id='blue']:checked ~ .text .blue {
+        background-color: #dbeafe;
+        color:#1d4ed8;
+    }
+    input[id='green']:checked + label{
+        background-color: #dcfce7;
+        color:#166534;
+    }
+    input[id='green']:checked ~ .text .green {
+        background-color: #dcfce7;
+        color:#166534;
+    }
+/*Css Language*/
+    input[id='vi']:checked + label{
+        background-color: #bbf7d0;
+        color:#166534;
+    }
+    input[id='vi']:checked ~ .text .vi {
+        color:#166534;
+    }
+    input[id='en']:checked + label{
+        background-color: #bfdbfe;
+        color:#1d4ed8;
+    }
+    input[id='en']:checked ~ .text .en {
+        color:#1d4ed8;
+    }
+    /*Option*/
+    input[id='option1']:checked +label{
+        background-color: #fef3c7;
+        color:#92400e;
+    }
+    input[id='option1']:checked ~ .text .option1 {
+        background-color: #fef3c7;
+        color:#92400e;
+    }
+    input[id='option2']:checked +label{
+        background-color: #bbf7d0;
+        color:#15803d;
+    }
+    input[id='option2']:checked ~ .text .option2 {
+        background-color: #bbf7d0;
+        color:#166534;
+    }
+    input[id='option3']:checked +label{
+        background-color: #fee2e2;
+        color:#b91c1c;
+    }
+    input[id='option3']:checked ~ .text .option3 {
+        background-color: #fee2e2;
+        color:#b91c1c;
+    }
+
+</style>
+<body>
+    <h1>Trung tâm cấu hình giao diện (Demo)</h1>
+<!--Theme-->
+    <p>Chọn giao diện (Theme):</p>
+    <input type="radio" name="theme" id="light">
+    <label for="light">Light</label>
+    <input type="radio" name="theme" id="dark">
+    <label for="dark">Dark</label>
+<!--Color-->
+    <p>Chọn màu chủ đạo (Color):</p>
+    <input type="radio" name="color" id="red">
+    <label for="red">Red</label>
+    <input type="radio" name="color" id="blue">
+    <label for="blue">Blue</label>
+    <input type="radio" name="color" id="green">
+    <label for="green">Green</label>
+<!--Language-->
+    <p>Chọn Ngôn ngữ (Language):</p>
+    <input type="radio" name="language" id="vi">
+    <label for="vi">VI</label>
+    <input type="radio" name="language" id="en">
+    <label for="en">EN</label>
+<!--Option-->
+    <p>Tùy chọn bổ sung (Option - Checkbox):</p>
+    <input type="checkbox" name="options" id="option1">
+    <label for="option1">Hiển thị mô tả nâng cao</label>
+    <input type="checkbox" name="options" id="option2">
+    <label for="option2">Bật chế độ Eco </label>
+    <input type="checkbox" name="options" id="option3">
+    <label for="option3">Hiển thị cảnh báo quan trọng</label>
+<!--Text-->
+    <div class="text">
+        <p class="light">Theme Light: Giao diện sáng, chữ đen.</p>
+        <p class="dark">Theme Dark: Giao diện tối, chữ sáng.</p>
+        <p class="red">Màu Red: được nhấn mạnh khi chọn Red.</p>
+        <p class="blue">Màu Blue: được nhấn mạnh khi chọn Blue.</p>
+        <p class="green">Màu Green: được nhấn mạnh khi chọn Green.</p>
+        <p class="vi">[VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn.</p>
+        <p class="en">[EN] Hello, world! Khi chọn EN, dòng này rõ hơn.</p>
+        <p class="option1">Mô tả nâng cao: giải thích kỹ hơn về cách lựa chọn đang ảnh hưởng đến giao diện.</p>
+        <p class="option2">Chế độ Eco: mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện.</p>
+        <p class="option3">Cảnh báo quan trọng: khu vực dùng để nhấn mạnh thông tin hệ thống.</p>
+    </div>
+
+</body>
+</html>
