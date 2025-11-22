@@ -69,11 +69,11 @@ html {
 }
 
 .modal-start {
-    display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    top: 20rem;
+    display: none;
+    top: 5rem;
     z-index: 999;
     background: white;
     border: 1px solid #ccc;
@@ -133,35 +133,313 @@ html {
     display: block;
     text-decoration: none;
 }
-.modal-start-login:hover {
+.account:hover,.advance:hover {
     text-decoration-line: underline;
 }
 .input-group {
     display: block;
 }
+.html-tooltip, .js-tooltip, .Reactjs-tooltip, .FE-tooltip, .Not-tooltip {
 
+    display: none;
+}
+.name-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 5rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.phone-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 10rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.email-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 15rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.title-modal-advise{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+.arrows-name {
+    display: none;
+    position: absolute;
+    top: 7rem;
+    z-index: 99;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.arrows-phone {
+    display: none;
+    position: absolute;
+    top: 12rem;
+    z-index: 99;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.arrows-email {
+    display: none;
+    position: absolute;
+    top: 17rem;
+    z-index: 99;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.subtitle-modal-advise {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    color: #334155;
+}
+.overlay-advise {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+.close-modal-advise {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.modal-advise {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    z-index: 999;
+    background: white;
+    border: 1px solid #ccc;
+    width: 30rem;
+    margin-inline: auto;
+    padding: 15px;
+    border-radius: 1rem;
+}
+#name, #phone, #email {
+    width: 26rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    background: #f8fafc;
+    border-color: #e2e8f0;
+}
+.label-name, .label-phone, .label-email {
+    display: block;
+    text-align: left;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.input-email, .input-phone {
+    margin-top: 1rem;
+}
+#name:hover ~.name-tooltip, #phone:hover ~.phone-tooltip, #email:hover ~.email-tooltip {
+    display: block;
+}
+#name:hover ~.arrows-name, #phone:hover ~.arrows-phone, #email:hover ~.arrows-email{
+    display: block;
+}
+.list-checkbox {
+    display: block;
+    text-align: left;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+}
+#html, #js, #Front-end, #Reactjs, #Not {
+    margin: 0.5rem 0;
 
+}
+.modal-advise {
+    /*display: none;*/
+}
+.html-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 22rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.arrows-html {
+    display: none;
+    position: absolute;
+    top: 24rem;
+    z-index: 98;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.js-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 24rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.arrows-js {
+    display: none;
+    position: absolute;
+    top: 26rem;
+    z-index: 98;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.FE-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 26rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.arrows-FE {
+    display: none;
+    position: absolute;
+    top: 28rem;
+    z-index: 98;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.Reactjs-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 27rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.arrows-Reactjs {
+    display: none;
+    position: absolute;
+    top: 29rem;
+    z-index: 98;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.mark {
+    color: red;
+}
+.Not-tooltip {
+    display: none;
+    background-color: #000000;
+    color: #f6f6f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    position: absolute;
+    top: 29rem;
+    margin-top: 5px;
+    left: 2rem;
+    z-index: 99;
+}
+.arrows-not {
+    display: none;
+    position: absolute;
+    top: 31rem;
+    z-index: 98;
+    margin-left: 2rem;
+    width: 1rem;
+    border-style: solid;
+    border-width: 1rem 1rem 0 1rem;
+    border-color: black transparent transparent transparent;
+}
+.button-submit {
+    background-color: #e86036;
+    color: #ffffff;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem 8rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#html:hover ~.html-tooltip,
+#js:hover ~.js-tooltip,
+#Front-end:hover ~.FE-tooltip,
+#Reactjs:hover ~.Reactjs-tooltip,
+#Not:hover ~.Not-tooltip{
+    display: block;
+}
+#html:hover ~.arrows-html,
+#js:hover ~.arrows-js,
+#Front-end:hover ~.arrows-FE,
+#Reactjs:hover ~.arrows-Reactjs,
+#Not:hover ~.arrows-not{
+    display: block;
+}
+.modal-advise {
+    display: none;
+}
+.overlay-advise {
+    display: none;
+}
+#modal-btn-advise:checked ~.overlay-advise {
+    display: block;
+}
+#modal-btn-advise:checked ~.modal-advise {
+    display: block;
+}
 #avatar {
     margin-top: 4rem;
     width: 3.5rem;
@@ -221,6 +499,84 @@ html {
     color: #334155;
 
 }
+.question {
+    width: 40rem;
+    margin: 3rem auto;
+    color: #334155;
+    font-size: 1rem;
+}
+.box_question {
+    margin-top: 1rem;
+
+}
+.title-question {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+.list-question {
+    margin: 2rem auto;
+    text-align: left;
+    display: inline;
+    position: relative;
+}
+.faq {
+    font-size: 1.375rem;
+    display: block;
+    position: relative;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.icon-plus {
+    position: absolute;
+    top: 1rem;
+    left: 17.5rem;
+    font-size: 1.5rem;
+    color: #9333ea;
+}
+
+.icon-minus {
+    display:none;
+    position: absolute;
+    top: 1rem;
+    left: 17.5rem;
+    font-size: 1.5rem;
+    color: #9333ea;
+}
+.answer {
+    font-size: 1.125rem;
+    display: none;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0 0 1rem 1rem;
+    border-color: rgba(192, 132, 252, 0.3);
+}
+#item1:checked ~.answer,
+#item2:checked ~.answer,
+#item3:checked ~.answer{
+    display: block;
+}
+#item1:checked ~.icon-plus,
+#item2:checked ~.icon-plus,
+#item3:checked ~.icon-plus
+{
+    display: none;
+}
+#item1:checked ~.icon-minus,
+#item2:checked ~.icon-minus,
+#item3:checked ~.icon-minus{
+    display: block;
+}
+#item1:checked ~.faq,
+#item2:checked ~.faq,
+#item3:checked ~.faq{
+    border-radius: 1rem 1rem 0 0 ;
+}
+
 footer {
     margin-top: 3rem;
     text-align: center;
