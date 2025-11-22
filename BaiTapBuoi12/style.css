@@ -3,39 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 16px;
 }
+
 .container {
     background-image: url(images/Background.png);
     background-size: cover;
     padding: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
-
 }
+
 .box {
     background-color: rgba(255, 255, 255, 0.35);
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
 }
+
 .title {
     font-size: 4rem;
     color: #1e293b;
     font-weight: 700;
 }
+
 .highlight {
     font-size: 4rem;
     color: #c084fc;
     font-weight: 700;
 }
+
 .sub {
     color: #334155;
     font-size: 1.25rem;
     margin: 1rem 0 3rem 0;
     font-weight: 400;
 }
+
 .button-start {
     border: none;
     padding: 1rem 3rem;
@@ -45,6 +51,7 @@ html {
     font-size: 1.125rem;
     font-weight: 600;
 }
+
 .button-advise {
     border: none;
     padding: 1rem 2rem;
@@ -55,15 +62,19 @@ html {
     font-size: 1.125rem;
     font-weight: 600;
 }
+
 .button-start:hover {
     background-color: #9333ea;
 }
+
 .button-advise:hover {
     background-color: #f05123;
 }
+
 #modal-btn-start:checked ~.overlay-start {
     display: block;
 }
+
 #modal-btn-start:checked ~.modal-start {
     display: block;
 }
@@ -76,19 +87,21 @@ html {
     top: 5rem;
     z-index: 999;
     background: white;
-    border: 1px solid #ccc;
-    width: 30rem;
+    border: 0.0625rem solid #ccc; /* 1px / 16 = 0.0625rem */
+    width: 32rem;
     margin-inline: auto;
-    padding: 15px;
+    padding: 0.9375rem; /* 15px / 16 = 0.9375rem */
     border-radius: 1rem;
 }
+
 .close-modal-start {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.8rem;
+    right: 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 .overlay-start {
     display: none;
     position: fixed;
@@ -96,24 +109,30 @@ html {
     background: rgba(0, 0, 0, 0.5);
     z-index: 998;
 }
+
 .text-modal-start {
     text-align: left;
     margin-left: 1.5rem;
-    margin-top: 0.8rem;
+    margin-top: 0.5rem; /* 8px / 16 = 0.5rem */
     font-size: 1.125rem;
 }
+
 .title-modal-start {
+    padding: 0 1rem;
     margin-top: 1.5rem;
     font-size: 1.8rem;
 }
+
 .subtitle-modal-start {
     margin-top: 1rem;
     margin-bottom: 1.2rem;
     color: #334155;
 }
+
 .modal-start-footer {
     margin-top: 3rem;
 }
+
 .button-now {
     text-decoration: none;
     border: none;
@@ -124,109 +143,123 @@ html {
     font-size: 1.125rem;
     font-weight: 600;
 }
+
 .button-now:hover {
     background-color: #9333ea;
 }
-.modal-start-login{
+
+.modal-start-login {
     color: #6b21a8;
     margin-top: 1.5rem;
     display: block;
     text-decoration: none;
 }
-.account:hover,.advance:hover {
+
+.account:hover, .advance:hover {
     text-decoration-line: underline;
 }
+
 .input-group {
     display: block;
 }
-.html-tooltip, .js-tooltip, .Reactjs-tooltip, .FE-tooltip, .Not-tooltip {
 
+.html-tooltip, .js-tooltip, .Reactjs-tooltip, .FE-tooltip, .Not-tooltip {
     display: none;
 }
+
 .name-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
     top: 5rem;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
+
 .phone-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
     top: 10rem;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
+
 .email-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
     top: 15rem;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
-.title-modal-advise{
+
+.title-modal-advise {
     margin-top: 1.5rem;
     font-size: 1.8rem;
 }
+
 .arrows-name {
     display: none;
     position: absolute;
-    top: 7rem;
-    z-index: 99;
+    top: 6.8rem;
+    z-index: 98;
     margin-left: 2rem;
     width: 1rem;
     border-style: solid;
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .arrows-phone {
     display: none;
     position: absolute;
-    top: 12rem;
-    z-index: 99;
+    top: 11.8rem;
+    z-index: 98;
     margin-left: 2rem;
     width: 1rem;
     border-style: solid;
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .arrows-email {
     display: none;
     position: absolute;
-    top: 17rem;
-    z-index: 99;
+    top: 16.8rem;
+    z-index: 98;
     margin-left: 2rem;
     width: 1rem;
     border-style: solid;
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .subtitle-modal-advise {
     margin-top: 1rem;
     margin-bottom: 1.2rem;
     color: #334155;
 }
+
 .overlay-advise {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 998;
 }
+
 .close-modal-advise {
     position: absolute;
     top: 1rem;
@@ -234,6 +267,7 @@ html {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
 .modal-advise {
     position: fixed;
     left: 0;
@@ -241,12 +275,13 @@ html {
     top: 5rem;
     z-index: 999;
     background: white;
-    border: 1px solid #ccc;
+    border: 0.0625rem solid #ccc;
     width: 30rem;
     margin-inline: auto;
-    padding: 15px;
+    padding: 0.9375rem;
     border-radius: 1rem;
 }
+
 #name, #phone, #email {
     width: 26rem;
     height: 2.5rem;
@@ -254,51 +289,60 @@ html {
     padding-left: 1rem;
     background: #f8fafc;
     border-color: #e2e8f0;
+    border-style: solid;
 }
+
 .label-name, .label-phone, .label-email {
     display: block;
     text-align: left;
     margin-left: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3125rem; /* 5px / 16 = 0.3125rem */
 }
+
 .input-email, .input-phone {
     margin-top: 1rem;
 }
+
 #name:hover ~.name-tooltip, #phone:hover ~.phone-tooltip, #email:hover ~.email-tooltip {
     display: block;
 }
-#name:hover ~.arrows-name, #phone:hover ~.arrows-phone, #email:hover ~.arrows-email{
+
+#name:hover ~.arrows-name, #phone:hover ~.arrows-phone, #email:hover ~.arrows-email {
     display: block;
 }
+
 .list-checkbox {
     display: block;
     text-align: left;
     margin-left: 1.2rem;
     margin-top: 1rem;
 }
-#html, #js, #Front-end, #Reactjs, #Not {
-    margin: 0.5rem 0;
 
+#html, #js, #Front-end, #Reactjs, #Not {
+    margin: 0.3125rem 0; /* 5px / 16 = 0.3125rem */
 }
+
 .modal-advise {
     /*display: none;*/
 }
+
 .html-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
-    top: 22rem;
-    margin-top: 5px;
+    top: 21rem;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
+
 .arrows-html {
     display: none;
     position: absolute;
-    top: 24rem;
+    top: 22.9rem;
     z-index: 98;
     margin-left: 2rem;
     width: 1rem;
@@ -306,22 +350,24 @@ html {
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .js-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
-    top: 24rem;
-    margin-top: 5px;
+    top: 22.5rem;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
+
 .arrows-js {
     display: none;
     position: absolute;
-    top: 26rem;
+    top: 24.3rem;
     z-index: 98;
     margin-left: 2rem;
     width: 1rem;
@@ -329,22 +375,24 @@ html {
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .FE-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
-    top: 26rem;
-    margin-top: 5px;
+    top: 24rem;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
+
 .arrows-FE {
     display: none;
     position: absolute;
-    top: 28rem;
+    top: 25.8rem;
     z-index: 98;
     margin-left: 2rem;
     width: 1rem;
@@ -352,22 +400,24 @@ html {
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .Reactjs-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
-    top: 27rem;
-    margin-top: 5px;
+    top: 25.5rem;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
+
 .arrows-Reactjs {
     display: none;
     position: absolute;
-    top: 29rem;
+    top: 27.3rem;
     z-index: 98;
     margin-left: 2rem;
     width: 1rem;
@@ -375,25 +425,28 @@ html {
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .mark {
     color: red;
 }
+
 .Not-tooltip {
     display: none;
     background-color: #000000;
     color: #f6f6f6;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
     position: absolute;
-    top: 29rem;
-    margin-top: 5px;
+    top: 27rem;
+    margin-top: 0.3125rem;
     left: 2rem;
     z-index: 99;
 }
+
 .arrows-not {
     display: none;
     position: absolute;
-    top: 31rem;
+    top: 28.8rem;
     z-index: 98;
     margin-left: 2rem;
     width: 1rem;
@@ -401,62 +454,75 @@ html {
     border-width: 1rem 1rem 0 1rem;
     border-color: black transparent transparent transparent;
 }
+
 .button-submit {
-    background-color: #e86036;
+    background-color: #e66c48;
     color: #ffffff;
-    border-radius: 6px;
+    border-radius: 0.375rem; /* 6px / 16 = 0.375rem */
     border: none;
     margin-top: 1rem;
     padding: 1rem 8rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+}
+.button-submit:hover {
+    background-color: #e86036;
 }
 
 #html:hover ~.html-tooltip,
 #js:hover ~.js-tooltip,
 #Front-end:hover ~.FE-tooltip,
 #Reactjs:hover ~.Reactjs-tooltip,
-#Not:hover ~.Not-tooltip{
+#Not:hover ~.Not-tooltip {
     display: block;
 }
+
 #html:hover ~.arrows-html,
 #js:hover ~.arrows-js,
 #Front-end:hover ~.arrows-FE,
 #Reactjs:hover ~.arrows-Reactjs,
-#Not:hover ~.arrows-not{
+#Not:hover ~.arrows-not {
     display: block;
 }
+
 .modal-advise {
     display: none;
 }
+
 .overlay-advise {
     display: none;
 }
+
 #modal-btn-advise:checked ~.overlay-advise {
     display: block;
 }
+
 #modal-btn-advise:checked ~.modal-advise {
     display: block;
 }
+
 #avatar {
     margin-top: 4rem;
     width: 3.5rem;
     border-radius: 3.5rem;
-    border: 0.2rem solid rgba(192, 132, 252, 0.6);
+    border: 0.125rem solid rgba(192, 132, 252, 0.6); /* 2px / 16 = 0.125rem */
 }
-.avatar-text{
+
+.avatar-text {
     font-size: 1.25rem;
     line-height: 3rem;
     color: #334155;
     font-weight: 600;
     padding: 1.2rem;
 }
+
 .number {
     color: #a855f7;
     font-weight: 700;
 }
+
 .advice {
     background-color: rgba(255, 255, 255, 0.4);
     margin: 1rem;
@@ -464,15 +530,18 @@ html {
     border-radius: 1rem;
     color: #334155;
 }
+
 #checkbox-highlight:checked~ .advice {
     background-color: rgba(192, 132, 252, 0.35);
     color: #6b21a8;
 }
+
 .advice-title {
     font-size: 1.375rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
+
 .advice-text {
     font-size: 1.125rem;
     font-weight: 400;
@@ -481,46 +550,51 @@ html {
 .icon_check {
     width: 1.2rem;
     height: 1.2rem;
-    margin-right: 0.3rem;
+    margin-right: 0.1875rem; /* 3px / 16 = 0.1875rem */
 }
+
 .line {
     border: none;
     margin-top: 2rem;
-    height: 0.1rem;
+    height: 0.0625rem; /* 1px / 16 = 0.0625rem */
     background: rgba(192, 132, 252, 0.6);
 }
+
 .features {
     margin-top: 1.5rem;
 }
+
 .text-feature {
     font-size: 1rem;
     margin: 1rem;
     font-weight: 600;
     color: #334155;
-
 }
+
 .question {
     width: 40rem;
     margin: 3rem auto;
     color: #334155;
     font-size: 1rem;
 }
+
 .box_question {
     margin-top: 1rem;
-
 }
+
 .title-question {
     font-weight: 600;
     font-size: 2rem;
     margin: 1rem 0;
-
 }
+
 .list-question {
     margin: 2rem auto;
     text-align: left;
     display: inline;
     position: relative;
 }
+
 .faq {
     font-size: 1.375rem;
     display: block;
@@ -530,7 +604,9 @@ html {
     border-radius: 1rem;
     font-weight: 400;
     cursor: pointer;
+    border: 0.125rem solid rgba(192, 132, 252, 0.6);
 }
+
 .icon-plus {
     position: absolute;
     top: 1rem;
@@ -540,41 +616,59 @@ html {
 }
 
 .icon-minus {
-    display:none;
+    display: none;
     position: absolute;
     top: 1rem;
     left: 17.5rem;
     font-size: 1.5rem;
     color: #9333ea;
 }
+
 .answer {
     font-size: 1.125rem;
     display: none;
     padding: 1rem 1.5rem;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 0 0 1rem 1rem;
-    border-color: rgba(192, 132, 252, 0.3);
+    /*border-color: rgba(192, 132, 252, 0.3);*/
 }
+
 #item1:checked ~.answer,
 #item2:checked ~.answer,
-#item3:checked ~.answer{
+#item3:checked ~.answer {
     display: block;
+    border-top: 0 solid rgba(192, 132, 252, 0.6);
+    border-right: 0.125rem solid rgba(192, 132, 252, 0.6);
+    border-bottom: 0.125rem solid rgba(192, 132, 252, 0.6);
+    border-left: 0.125rem solid rgba(192, 132, 252, 0.6);
 }
+
 #item1:checked ~.icon-plus,
 #item2:checked ~.icon-plus,
-#item3:checked ~.icon-plus
-{
+#item3:checked ~.icon-plus {
     display: none;
 }
+
 #item1:checked ~.icon-minus,
 #item2:checked ~.icon-minus,
-#item3:checked ~.icon-minus{
+#item3:checked ~.icon-minus {
     display: block;
 }
+
 #item1:checked ~.faq,
 #item2:checked ~.faq,
-#item3:checked ~.faq{
-    border-radius: 1rem 1rem 0 0 ;
+#item3:checked ~.faq {
+    border-radius: 1rem 1rem 0 0;
+    background: rgba(192, 132, 252, 0.15);
+    border-top: 0.125rem solid rgba(192, 132, 252, 0.6);
+    border-right: 0.125rem solid rgba(192, 132, 252, 0.6);
+    border-bottom: 0 solid rgba(192, 132, 252, 0.6);
+    border-left: 0.125rem solid rgba(192, 132, 252, 0.6);
+}
+#item1:hover ~.faq,
+#item2:hover ~.faq,
+#item3:hover ~.faq {
+    background-color: rgba(192, 132, 252, 0.15);
 }
 
 footer {
