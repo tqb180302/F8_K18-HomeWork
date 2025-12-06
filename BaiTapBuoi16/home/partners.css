@@ -1,0 +1,85 @@
+
+.partners {
+    display: flex;
+    align-items: center;
+    max-width: 1595px;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px;
+    border:1px solid #F1F1F3;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.partner-zapier {
+    background-image: url("../logo/zapier.svg");
+    width: 68px;
+    height: 34px;
+    background-repeat: no-repeat;
+    padding: 30px 75px;
+    background-position: center;
+
+}
+.partner-spotify {
+    background-image: url("../logo/spotify.svg");
+    width: 99px;
+    height: 34px;
+    background-repeat: no-repeat;
+    padding: 30px 75px;
+    background-position: center;
+}
+
+.partner-zoom {
+    background-image: url("../logo/zoom.svg");
+    width: 70px;
+    height: 34px;
+    background-repeat: no-repeat;
+    padding: 30px 75px;
+    background-position: center;
+}
+
+.partner-amazon {
+    background-image: url("../logo/amazon.svg");
+    width: 78px;
+    height: 34px;
+    background-repeat: no-repeat;
+    padding: 30px 75px;
+    background-position: center;
+}
+
+.partner-adobe {
+    background-image: url("../logo/adobe.svg");
+    width: 94px;
+    height: 34px;
+    background-repeat: no-repeat;
+    padding: 30px 75px;
+    background-position: center;
+}
+
+.partner-notion {
+    background-image: url("../logo/notion.svg");
+    width: 91px;
+    height: 34px;
+    background-repeat: no-repeat;
+    padding: 30px 75px;
+    background-position: center;
+}
+
+.partner-netflix {
+    background-image: url("../logo/netfilx.svg");
+    width: 78px;
+    height: 34px;
+    background-repeat: no-repeat;
+    padding: 30px 75px;
+    background-position: center;
+}
+.video-intro {
+    background-image: url("../images/video-img.png");
+    width: 1585px;
+    height: 784px;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 16px;
+    margin-bottom: 150px;
+}
