@@ -55,6 +55,11 @@ header {
     padding: 14px 24px;
 }
 
+#header-bottom div nav > ul > li {
+    font-size: 18px;
+}
+
+
 #header-bottom div nav > ul > li:hover {
     background-color: #F1F1F3;
     color: black;
