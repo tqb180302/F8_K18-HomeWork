@@ -107,9 +107,11 @@ footer > p {
     align-items: center;
     margin-bottom: 20px;
 }
-.footer-contact > ul li p {
+.footer-contact > ul li p a {
     font-weight: 400;
     font-size: 18px;
+    text-decoration: none;
+    color: #262626;
 }
 
 
@@ -155,6 +157,10 @@ footer > p {
 .logo-social {
     margin-top: 14px;
     display: flex;
+}
+
+.footer-contact > ul li:hover {
+    text-decoration: underline;
 }
 
 

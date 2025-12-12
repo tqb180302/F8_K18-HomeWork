@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 ;
 }
 .page-logo {
@@ -18,6 +19,7 @@
 
 }
 .page-text {
+    position: relative;
     display: flex;
     align-items: center;
     background: white;
@@ -31,6 +33,12 @@
 }
 .page-text h1 > span {
     color: #FF9500;
+}
+
+.page-text img {
+    position: absolute;
+    top: -30px;
+    left: -30px;
 }
 
 .page-description{
@@ -51,21 +59,24 @@
     color: #262626;
     margin-bottom: 60px;
 }
-.page-button button:first-child {
+.page-button a:first-child {
+    text-decoration: none;
     background-color: #FF9500;
     color: white;
-    padding: 14px 34px;
+    padding: 18px 24px;
     border: 1px solid #FF9500;
     border-radius: 6px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
+    margin-right: 12px;
 }
 
-.page-button button:last-child {
+.page-button a:last-child {
+    text-decoration: none;
     background-color: white;
     color: #262626;
-    padding: 14px 34px;
+    padding: 18px 24px;
     border: 1px solid white;
     border-radius: 6px;
     cursor: pointer;

@@ -41,7 +41,7 @@
 
 .answer {
     display:none;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
 }
 
 .list-question {
@@ -109,6 +109,14 @@
     background-color: #f7f7f8;
     border-radius: 8px;
     border: 1px solid #F1F1F3;
+}
+#item:checked ~.answer p,
+#item2:checked ~.answer p,
+#item3:checked ~.answer p,
+#item4:checked ~.answer p,
+#item5:checked ~.answer p {
+    border-top: 1px solid #F1F1F3;
+    padding-top: 50px;
 }
 
 #item:checked ~.answer,

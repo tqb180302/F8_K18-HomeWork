@@ -13,36 +13,43 @@
     <link rel="stylesheet" href="pricing.css">
     <link rel="stylesheet" href="frequently.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <!--header bar-->
 <header>
     <div id="header-top">
-        <span>Free Courses 🌟 Sale Ends Soon, Get It Now</span>
+        <span><a href="#">Free Courses 🌟 Sale Ends Soon, Get It Now</a></span>
         <img src="../icons/arrow-right.svg" alt="arrows" width="24px">
     </div>
+</header>
+
+<div class="header-fixed">
     <div id="header-bottom">
         <div>
-            <div id="header--logo"></div>
+            <a href="#" id="header--logo"></a>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Courses</li>
-                    <li>About us</li>
-                    <li>Pricing</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#courses-1">Courses</a></li>
+                    <li><a href="#testimonial-1">About us</a></li>
+                    <li><a href="#pricing-1">Pricing</a></li>
+                    <li><a href="#footer-1">Contact</a></li>
                 </ul>
             </nav>
         </div>
-
         <div id="header--action">
             <button>Sign Up</button>
             <button>Login</button>
         </div>
     </div>
-</header>
+</div>
 <div class="page-title container">
     <div class="page-text">
+        <img src="../icons/highlight.svg" alt="">
         <div class="page-logo"></div>
         <h1><span>Unlock</span> You Creative Potential</h1>
     </div>
@@ -51,8 +58,8 @@
         <p>Learn from Industry Experts and Enhance Your Skills.</p>
     </div>
     <div class="page-button">
-        <button>Explore Courses</button>
-        <button>View Pricing</button>
+        <a href="#courses-1">Explore Courses</a>
+        <a href="#pricing-1">View Pricing</a>
     </div>
 </div>
 
@@ -306,7 +313,7 @@
         </div>
     </div>
 <!--Our Pricing-->
-    <div class="title-body container">
+    <div class="title-body container" id="pricing-1">
         <div>
             <h2>Our Testimonials</h2>
             <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit
@@ -450,14 +457,14 @@
         </div>
     </div>
 </main>
-<footer>
+<footer id="footer-1">
     <div class="footer-container">
         <div class="footer-box">
             <div class="footer-contact">
                 <div class="footer-logo"></div>
                 <ul>
-                    <li><div class="icon-mail"></div><p>hello@skillbridge.com</p></li>
-                    <li><div class="icon-phone"></div><p>+91 91813 23 2309</p></li>
+                    <li><div class="icon-mail"></div><p><a href="mailto:hello@skillbridge.com">hello@skillbridge.com</a></p></li>
+                    <li><div class="icon-phone"></div><p><a href="tel:+9191813232309">+91 91813 23 2309</a></p></li>
                     <li><div class="icon-location"></div><p>Somewhere in the World</p></li>
                 </ul>
             </div>

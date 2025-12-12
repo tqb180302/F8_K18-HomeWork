@@ -1,5 +1,6 @@
 header {
     margin: 20px 30px;
+    position: relative;
 }
 
 #header-top {
@@ -11,6 +12,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#header-top span a {
+    text-decoration: none;
+    color: white;
 }
 
 #header-top img {
@@ -28,13 +34,21 @@ header {
 }
 
 #header-bottom {
-    width: 1600px;
+    max-width: 1569px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
     border-bottom: #F1F1F3 solid 1px;
+}
+
+.header-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #f7f7f8;
 }
 
 #header-bottom div {
@@ -54,9 +68,15 @@ header {
     list-style: none;
     padding: 14px 24px;
 }
+#header-bottom ul li > a {
+    text-decoration: none;
+    color: #262626;
+}
 
 #header-bottom div nav > ul > li {
     font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 6px;
 }
 
 
@@ -94,5 +114,6 @@ header {
 }
 
 #header--action button:last-child:hover {
-    background-color: #ff6a00;
+    background-color: white;
+    color: #ff9500;
 }

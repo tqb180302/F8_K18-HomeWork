@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     max-width: 1595px;
-    justify-content: space-between;
     margin-top: 100px;
+    justify-content: space-between;
     margin-bottom: 100px;
     padding: 30px;
     border:1px solid #F1F1F3;
@@ -13,65 +13,64 @@
 }
 
 .partner-zapier {
+    flex: 1;
     background-image: url("../logo/zapier.svg");
-    width: 68px;
-    height: 34px;
     background-repeat: no-repeat;
-    padding: 30px 75px;
+    padding: 30px 76px;
     background-position: center;
+    border-right: 1px solid #F1F1F3;
 
 }
 .partner-spotify {
+    flex: 1;
     background-image: url("../logo/spotify.svg");
-    width: 99px;
-    height: 34px;
     background-repeat: no-repeat;
-    padding: 30px 75px;
+    padding: 30px 76px;
     background-position: center;
+    border-right: 1px solid #F1F1F3;
 }
 
 .partner-zoom {
+    flex: 1;
     background-image: url("../logo/zoom.svg");
-    width: 70px;
-    height: 34px;
     background-repeat: no-repeat;
-    padding: 30px 75px;
+    padding: 30px 76px;
     background-position: center;
+    border-right: 1px solid #F1F1F3;
 }
 
 .partner-amazon {
+    flex: 1;
     background-image: url("../logo/amazon.svg");
-    width: 78px;
-    height: 34px;
     background-repeat: no-repeat;
-    padding: 30px 75px;
+    padding: 30px 76px;
     background-position: center;
+    border-right: 1px solid #F1F1F3;
 }
 
 .partner-adobe {
+    flex: 1;
     background-image: url("../logo/adobe.svg");
-    width: 94px;
-    height: 34px;
     background-repeat: no-repeat;
-    padding: 30px 75px;
+    padding: 30px 76px;
     background-position: center;
+    border-right: 1px solid #F1F1F3;
 }
 
 .partner-notion {
+    flex: 1;
     background-image: url("../logo/notion.svg");
-    width: 91px;
-    height: 34px;
     background-repeat: no-repeat;
-    padding: 30px 75px;
+    padding: 30px 76px;
     background-position: center;
+    border-right: 1px solid #F1F1F3;
 }
 
 .partner-netflix {
+    flex: 1;
     background-image: url("../logo/netfilx.svg");
-    width: 78px;
-    height: 34px;
     background-repeat: no-repeat;
-    padding: 30px 75px;
+    padding: 30px 76px;
     background-position: center;
 }
 .video-intro {
