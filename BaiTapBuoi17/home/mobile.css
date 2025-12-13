@@ -1,0 +1,635 @@
+@media screen and (max-width: 390px) {
+
+    .container{
+        max-width: 358px;
+        margin: auto;
+    }
+/*Header*/
+    #header-top {
+        padding: 10px 16px;
+        margin: 40px 16px 0 16px;
+    }
+
+    #header-top span {
+        font-size: 14px;
+    }
+
+    #header-top img {
+        width: 20px;
+        height: 20px;
+        margin-left: 7px;
+    }
+
+    .header-fixed nav ul li  {
+        display: none;
+    }
+
+    #header--logo {
+        background-size: 24px;
+        padding: 20px;
+    }
+
+    #header--action{
+        margin-right: 54px;
+    }
+
+    #header--action button:last-child {
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    #header--action button:first-child {
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .icon-menu {
+        display: block;
+        background-image: url("../icons/menu-bar.svg");
+        width: 26px;
+        height: 17px;
+    }
+
+
+    .icon-menu {
+        position: absolute;
+        right: 0;
+    }
+
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 100;
+    }
+
+    .logo-menu-bar{
+        background-image: url("../images/logo.svg");
+        width: 24px;
+        height: 24px;
+        background-color: #FF9500;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20px;
+        border-radius: 6px;
+    }
+
+    .close-menu {
+        display: block;
+        background-image:url("../icons/icon-close-menu.svg");
+        width: 22px;
+        height: 22px;
+        background-repeat: no-repeat;
+    }
+
+    .mobile-menu-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #F1F1F3;
+
+    }
+
+    .mobile-menu-box {
+        padding: 14px 30px;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 85%;
+        max-width: 320px;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding: 20px 0;
+    }
+
+    .mobile-menu-bottom {
+        margin-top: 25px;
+    }
+
+    .mobile-menu-bottom ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: #262626;
+
+    }
+
+    .mobile-menu-bottom ul li {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 23px;
+        padding: 14px;
+    }
+    .mobile-menu-bottom ul li:hover {
+        background-color: #f2f2f7;
+    }
+
+    #menu-toggle:checked ~.mobile-menu {
+        display: block;
+    }
+
+    #menu-toggle:checked ~.menu-overlay {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Page_title*/
+
+    .page-title {
+        margin-top: 50px;
+    }
+
+    .page-text {
+        padding: 14px;
+        margin-bottom: 16px;
+    }
+
+    .page-logo {
+        background-size: 18px 21px;
+        padding: 10px;
+    }
+
+    .page-text h1 {
+        font-size: 16px;
+    }
+
+    .page-description {
+        margin-top: 0;
+    }
+
+    .page-description h2 {
+        font-size: 24px;
+    }
+
+    .page-description p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .page-text img {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+    }
+
+    .page-button a:first-child {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .page-button{
+        display: flex;
+    }
+
+    .page-button a:last-child {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+/*Benefits*/
+
+    .partners {
+        overflow-x: auto;
+        padding: 10px;
+        margin: 30px 0;
+    }
+
+    .partner-zapier {
+        background-size: 48px 24px;
+        padding: 30px 70px;
+    }
+
+    .partner-spotify {
+        background-size: 70px 24px;
+        padding: 30px 70px;
+    }
+
+    .partner-zoom {
+        background-size: 49px 24px;
+        padding: 30px 70px;
+    }
+
+    .partner-amazon {
+        background-size: 60px 24px;
+        padding: 30px 70px;
+    }
+    .partner-adobe {
+        background-size: 80px 24px;
+        padding: 30px 70px;
+    }
+    .partner-notion {
+        background-size: 70px 24px;
+        padding: 30px 70px;
+    }
+    .partner-netflix {
+        background-size: 70px 24px;
+        padding: 30px 70px;
+    }
+    /*Title*/
+    .title-box {
+        margin-top: 50px;
+    }
+
+    .title-body{
+        display: inline-block;
+    }
+
+    .title-body div > h2 {
+        font-size: 28px;
+
+    }
+
+    .title-body div > p {
+        font-size: 14px;
+        display: inline-block;
+
+    }
+
+    .body-button {
+        margin-top: 20px;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .benefits {
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .benefit-item {
+        height: 340px;
+        padding: 30px;
+    }
+
+    .benefit-number {
+        font-size: 50px;
+    }
+
+    .benefit-title {
+        font-size: 20px;
+        margin: 30px 0 14px 0
+    }
+
+    .benefit-description {
+        font-size: 14px;
+        color: #4c4c4d;
+        padding-bottom: 30px;
+    }
+
+    .benefit-icon {
+        background-size: 13px;
+        padding: 25px;
+        margin: 30px;
+    }
+/*    Courses*/
+    .courses-box {
+        padding: 24px;
+    }
+
+    .courses-card {
+        width: 357px;
+    }
+
+    .card-img--web {
+        background-size: 309px 172px;
+        width: 309px;
+        height: 172px;
+
+    }
+
+    .card-img--design {
+        background-size: 309px 172px;
+        width: 309px;
+        height: 172px;
+    }
+
+    .card-img--mobile {
+        background-size: 309px 172px;
+        width: 309px;
+        height: 172px;
+
+    }
+
+    .card-img--graphic {
+        background-size: 309px 172px;
+        width: 309px;
+        height: 172px;
+
+    }
+
+    .card-img--frontend {
+        background-size: 309px 172px;
+        width: 309px;
+        height: 172px;
+
+    }
+
+    .card-img--javascript {
+        background-size: 309px 172px;
+        width: 309px;
+        height: 172px;
+
+    }
+
+    .courses {
+        margin-top: 50px;
+        gap: 20px
+    }
+
+    .courses-box button {
+        background-color: #f7f7f8;
+        width: 309px;
+    }
+
+    .card-info {
+        position: relative;
+        height: 68px;
+    }
+
+    .card-info div > span {
+        font-size: 14px;
+    }
+    .card-info > span {
+        position: absolute;
+        font-size: 16px;
+        bottom: 0;
+    }
+
+    .courses-box h3 {
+        font-size: 18px;
+    }
+    .courses-box p {
+        font-size: 14px;
+
+    }
+
+    .courses-box button {
+        font-size: 14px;
+        padding: 14px 0;
+    }
+
+/*testimonials*/
+    .testimonials{
+        margin-top: 50px;
+        gap: 20px
+    }
+    .testimonials-top {
+        font-size: 14px;
+        padding: 30px;
+    }
+    .testimonials-bottom {
+        padding: 30px;
+    }
+
+    .testimonials-info--avatar1 {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+
+    }
+
+    .testimonials-info--avatar2 {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .testimonials-info--avatar3 {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .testimonials-info--avatar4 {
+        background-size: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .testimonials-info span {
+        font-size: 16px;
+
+    }
+
+    .testimonials-bottom button {
+        padding: 14px 26px;
+        font-size: 14px;
+    }
+
+/*<!--Our Pricing-->*/
+
+    .pricing-button {
+        width: 222px;
+        margin: 20px auto;
+    }
+
+    .pricing-button--month {
+        background-color: #FF9500;
+        color: white;
+        padding: 12px 24px;
+        font-size: 14px;
+
+    }
+    .pricing-button--year {
+        background-color: white;
+        padding: 12px 24px;
+        font-size: 14px;
+
+    }
+
+    .pricing {
+        padding: 20px;
+    }
+
+    .pricing-card {
+        width: 317px;
+        padding: 30px 20px 20px 20px;
+    }
+
+    .pricing-plan--body {
+        padding: 20px;
+    }
+
+    .pricing-plan > button {
+        width: 277px;
+    }
+
+    .pricing-plan p:first-child {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .pricing-plan--price {
+        margin-top: 30px;
+    }
+
+    .pricing-plan--price span:first-child {
+        font-size: 50px;
+    }
+    .pricing-plan--price span:last-child {
+        font-size: 14px;
+    }
+
+    .pricing-plan--body {
+        margin-top: 30px;
+    }
+
+    .pricing-plan--body > h3 {
+        font-size: 18px;
+    }
+
+    .pricing-plan--body ul > li {
+        font-size: 14px;
+    }
+
+/*        <!--Asked Questions-->*/
+    .frequently {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .frequently-title {
+        width: 309px;
+        margin-bottom: 40px;
+    }
+
+    .faq-box {
+        width: 309px;
+    }
+    .list-question {
+       width: 309px;
+        padding: 24px;
+    }
+
+    .answer {
+        width: 309px;
+        padding: 24px;
+    }
+
+    .faq {
+        font-size: 16px;
+        width: 191px;
+
+    }
+    .icon-plus {
+        margin-right: 24px;
+    }
+
+    .icon-close {
+        margin-right: 24px;
+    }
+
+    .answer > p {
+        font-size: 14px;
+        padding-top: 20px;
+    }
+
+    .answer-detail {
+        margin-top: 20px;
+        padding: 12px 20px;
+
+    }
+
+    .answer-detail h3 {
+        font-size: 14px;
+    }
+
+    .frequently-title h2 {
+        font-size: 26px;
+    }
+
+    .frequently-title p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .frequently-title button {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+/*Footer*/
+    .footer-container {
+        width: 100%;
+        padding: 50px 20px 20px 20px;
+    }
+
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info {
+        height: 280px;
+        margin-top: 20px;
+        position: relative;
+        justify-content: normal;
+    }
+    .footer-info--social {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .footer-contact > ul li {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+    .footer-info--home {
+        margin-right: 30px;
+    }
+
+    .footer-info--home ul li {
+        margin: 4px 0;
+    }
+
+    .footer-info--about ul li {
+        margin: 4px 0;
+    }
+
+    .footer-line {
+        margin-top: 20px;
+    }
+
+    footer > p {
+        font-size: 14px;
+    }
+
+
+
+
+
+}

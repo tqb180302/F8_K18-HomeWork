@@ -1,0 +1,118 @@
+#header-top {
+    margin: 20px 30px;
+    position: relative;
+}
+
+#header-top {
+    background-color: #FF9500;
+    height: 55px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-top span a {
+    text-decoration: none;
+    color: white;
+}
+
+#header-top img {
+    margin-left: 23px;
+}
+
+#header--logo {
+    background-image: url("../images/logo.svg");
+    background-color: #FF9500;
+    padding: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+}
+
+#header-bottom {
+    max-width: 1569px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: #F1F1F3 solid 1px;
+}
+
+.header-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: #f7f7f8;
+}
+
+#header-bottom div {
+    display: flex;
+    align-items: center;
+}
+
+#header-bottom nav {
+    margin-left: 50px;
+}
+
+#header-bottom ul {
+    display: flex;
+}
+
+#header-bottom ul li {
+    list-style: none;
+    padding: 14px 24px;
+}
+#header-bottom ul li > a {
+    text-decoration: none;
+    color: #262626;
+}
+
+#header-bottom div nav > ul > li {
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+
+#header-bottom div nav > ul > li:hover {
+    background-color: #F1F1F3;
+    color: black;
+    padding: 14px 24px;
+    border: 1px solid #F1F1F3;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#header--action button:first-child {
+    border-radius: 6px;
+    padding: 14px 34px;
+    border-style: none;
+    background-color: #f7f7f8;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#header--action button:last-child {
+    background-color: #FF9500;
+    color: white;
+    padding: 14px 34px;
+    border: 1px solid #FF9500;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#header--action button:first-child:hover {
+    background-color: #f1f1f3;
+}
+
+#header--action button:last-child:hover {
+    background-color: white;
+    color: #ff9500;
+}

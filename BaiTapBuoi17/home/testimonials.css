@@ -1,0 +1,89 @@
+.testimonials {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.testimonials-card {
+    width: 783px;
+    border-radius: 12px;
+}
+
+.testimonials-top {
+    padding: 50px;
+    background-color: #ffffff;
+    border-top: 1px solid #F1F1F3;
+    border-right: 1px solid #F1F1F3;
+    border-left: 1px solid #F1F1F3;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+.testimonials-top {
+    color: #4c4c4d;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.testimonials-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 31px 50px;
+    background-color: #fcfcfd;
+    border: 1px solid #F1F1F3;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.testimonials-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-info--avatar1 {
+    background-image: url("../images/avatar/sarah.svg");
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.testimonials-info--avatar2 {
+    background-image: url("../images/avatar/jason.svg");
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.testimonials-info--avatar3 {
+    background-image: url("../images/avatar/emily.svg");
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.testimonials-info--avatar4 {
+    background-image: url("../images/avatar/michael.svg");
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.testimonials-info span {
+    color: #333333;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.testimonials-bottom button {
+    background-color: #f7f7f8;
+    padding: 18px 24px;
+    border: 1px solid #F1F1F3;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+

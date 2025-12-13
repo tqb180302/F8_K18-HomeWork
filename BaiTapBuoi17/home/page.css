@@ -1,0 +1,85 @@
+.page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+;
+}
+.page-logo {
+    background-image: url("../icons/logo-h1.svg");
+    width: 25px;
+    height: 30px;
+    background-color: #fff4e5;
+    padding: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+    border: 14px solid #fff4e5;
+    margin-right: 10px;
+
+}
+.page-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 14px 30px;
+    border-radius: 11px;
+}
+
+.page-text h1 {
+    font-weight: 600;
+    font-size: 48px;
+}
+.page-text h1 > span {
+    color: #FF9500;
+}
+
+.page-text img {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.page-description{
+    margin: 20px;
+    text-align: center;
+}
+
+.page-description h2 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #262626;
+    margin: 10px;
+}
+
+.page-description > p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #262626;
+    margin-bottom: 60px;
+}
+.page-button a:first-child {
+    text-decoration: none;
+    background-color: #FF9500;
+    color: white;
+    padding: 18px 24px;
+    border: 1px solid #FF9500;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.page-button a:last-child {
+    text-decoration: none;
+    background-color: white;
+    color: #262626;
+    padding: 18px 24px;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}

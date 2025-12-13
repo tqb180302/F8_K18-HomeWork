@@ -1,0 +1,114 @@
+
+.courses {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.courses-box {
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-card {
+    display: flex;
+    flex-direction: column;
+    width: 783px;
+    background-color: white;
+    border: 1px solid #F1F1F3;
+    border-radius: 12px;
+}
+
+.card-img--web {
+    background-image: url("../images/courses/courses-web.svg");
+    width: 683px;
+    height: 380px;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+}
+.card-img--design {
+    background-image: url("../images/courses/courses-design.svg");
+    width: 683px;
+    height: 380px;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+}
+
+.card-img--mobile {
+    background-image: url("../images/courses/courses-mobile.svg");
+    width: 683px;
+    height: 380px;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+}
+.card-img--graphic {
+    background-image: url("../images/courses/courses-graphic.svg");
+    width: 683px;
+    height: 380px;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+}
+.card-img--frontend {
+    background-image: url("../images/courses/courses-frontend.svg");
+    width: 683px;
+    height: 380px;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+}
+
+.card-img--javascript {
+    background-image: url("../images/courses/courses-javascript.svg");
+    width: 683px;
+    height: 380px;
+    background-repeat: no-repeat;
+    margin-bottom:30px;
+}
+
+.card-info div span:first-child{
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    padding: 10px 16px;
+    margin-right: 10px;
+}
+.card-info div span:last-child{
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    padding: 10px 16px;
+}
+.card-info > span {
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.courses-box h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 30px 0 14px 0;
+    color: #262626;
+}
+.courses-box p {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262626;
+    margin-bottom: 30px;
+}
+
+.courses-box button {
+    background-color: #f7f7f8;
+    width: 683px;
+    margin-top: auto;
+    padding: 18px 24px;
+    border: 1px solid #F1F1F3;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+

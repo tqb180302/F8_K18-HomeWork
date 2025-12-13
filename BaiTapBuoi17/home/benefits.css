@@ -1,0 +1,87 @@
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.title-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+.title-body div > h2 {
+    font-weight: 600;
+    font-size: 48px;
+    color: #262626;
+    padding: 12px 0;
+    margin-bottom: 6px;
+}
+
+.title-body div > p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #59595A;
+    max-width: 1177px;
+}
+
+.body-button {
+    background-color: white;
+    padding: 18px 24px;
+    border: 1px solid #F1F1F3;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.benefits {
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    position: relative;
+    flex-shrink: 1;
+    padding: 50px;
+    background-color: white;
+    width: 519px;
+    height: 437px;
+    border-radius: 12px;
+}
+
+.benefit-number {
+    font-size: 80px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+.benefit-title {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 50px 0 14px 0
+}
+
+.benefit-description {
+    font-size: 18px;
+    color: #4c4c4d;
+}
+.benefit-icon {
+    position: absolute;
+    margin: 50px;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px;
+    background-color: #f1f1f3;
+    border: 1px solid #fcfcfd;
+    padding: 34px;
+    background-image: url("../icons/arrow-benefit.svg");
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 17px;
+    background-position: center;
+    cursor: pointer;
+}
