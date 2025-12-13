@@ -553,6 +553,9 @@
     .icon-plus {
         margin-right: 24px;
     }
+    .box-question {
+        max-width: 100%;
+    }
 
     .icon-close {
         margin-right: 24px;
@@ -638,6 +641,7 @@
     .logo-x {
         padding: 23px;
     }
+
 
 
 
