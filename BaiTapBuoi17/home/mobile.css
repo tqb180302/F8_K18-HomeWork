@@ -67,6 +67,7 @@
 
     .logo-menu-bar{
         background-image: url("../images/logo.svg");
+        background-size: 24px;
         width: 24px;
         height: 24px;
         background-color: #FF9500;
@@ -146,25 +147,6 @@
     #menu-toggle:checked ~.menu-overlay {
         display: block;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         /*Page_title*/
@@ -499,6 +481,8 @@
     .pricing-plan--price {
         margin-top: 30px;
     }
+
+
 
     .pricing-plan--price span:first-child {
         font-size: 50px;
