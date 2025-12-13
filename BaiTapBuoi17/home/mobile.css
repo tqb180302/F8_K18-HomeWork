@@ -130,6 +130,11 @@
         margin-bottom: 23px;
         padding: 14px;
     }
+
+    .mobile-menu-bottom ul {
+        display:block;
+    }
+
     .mobile-menu-bottom ul li:hover {
         background-color: #f2f2f7;
     }
@@ -141,6 +146,7 @@
     #menu-toggle:checked ~.menu-overlay {
         display: block;
     }
+
 
 
 

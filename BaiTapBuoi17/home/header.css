@@ -116,3 +116,7 @@
     background-color: white;
     color: #ff9500;
 }
+
+.mobile-menu-bottom ul {
+    display:none;
+}
