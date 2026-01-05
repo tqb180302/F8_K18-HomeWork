@@ -69,7 +69,7 @@ console.log(changeDegree(30))
 
 // Lesson 6
 console.log("===========Lesson6===========")
-function Electricity(kwh) {
+function getElectricityBill(kwh) {
     let total
     if (kwh <= 50) {
         total = kwh * 1678
@@ -83,7 +83,7 @@ function Electricity(kwh) {
     return total
 }
 
-console.log("Price " + Electricity(51) + " VNĐ")
+console.log("Price " + getElectricityBill(51) + " VNĐ")
 
 
 
