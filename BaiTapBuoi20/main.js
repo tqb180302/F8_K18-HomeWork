@@ -68,6 +68,7 @@ console.log("true sau khi ep kieu: ", typeof z)
 // Boolean(null)        - false
 // Boolean([]           - true (mảng rỗng)
 
+
 //Phan 6
 console.log("==========Phan 6===========")
 const numbers = [4, 3, 1, 5, 1];
