@@ -1,27 +1,27 @@
 // Lesson 1
 console.log("===========Lesson1===========")
-function arrangeScore(score) {
+function  getStudentLevel (score) {
     if (score < 0 || score > 10) {
-        console.log("Invalid score")
-        return;
-    }
-    if (score >= 9) {
-        console.log("Excellent")
+        return "Invalid score"
+    } if (score >= 9) {
+        return "Excellent"
     } else if (score >= 8) {
-        console.log("Very Good")
+        return "Very Good"
     } else if (score >= 6.5) {
-        console.log("Good")
+        return "Good"
     } else if (score >= 5) {
-        console.log("Average")
+        return "Average"
     } else {
-        console.log("Weak")
+        return "Weak"
     }
 }
-arrangeScore(9);
+console.log(getStudentLevel (4))
+console.log(getStudentLevel (9))
+console.log(getStudentLevel (11))
 
 // Lesson 2
 console.log("===========Lesson2===========")
-function numberDayInMonth(month) {
+function getDaysInMonth(month) {
     switch (month) {
         case 1:
         case 3:
@@ -30,42 +30,47 @@ function numberDayInMonth(month) {
         case 8:
         case 10:
         case 12:
-            console.log("Month " + month + " has 31 days")
-            break
+            return "Month " + month + " has 31 days"
         case 4:
         case 6:
         case 9:
         case 11:
-            console.log("Month " + month + " has 30 days")
-            break
+            return "Month " + month + " has 30 days"
         case 2:
-            console.log("Month " + month + " has 28 days")
-            break
+            return "Month " + month + " has 28 days"
         default:
-            console.log("Invalid Month")
+            return "Invalid Month"
     }
 }
-numberDayInMonth(4)
+console.log(getDaysInMonth(7))
+console.log(getDaysInMonth(4))
+console.log(getDaysInMonth(13))
 
 // Lesson 3
 console.log("===========Lesson3===========")
-let n = 8
-let result = (n % 2 === 0) ? "Even" : "Odd"
-console.log(result)
+function checkOddEven(number) {
+    return (number % 2 === 0) ? "Even" : "Odd"
+}
+console.log(checkOddEven(13))
+console.log(checkOddEven(10))
 
 // Lesson 4
 console.log("===========Lesson4===========")
-let age = 10
-const price = 100000
-let ticketPrice = (age < 13) ? (price / 2) : price
-console.log("Ticket price " + ticketPrice + " VNĐ" )
+function getTicketPrice(age) {
+    const price = 100000
+    let ticketPrice = (age < 13) ? (price / 2) : price
+    return "Ticket price " + ticketPrice + " VNĐ"
+}
+console.log(getTicketPrice(12))
+console.log(getTicketPrice(15))
+
 
 // Lesson 5
 console.log("===========Lesson5===========")
-function changeDegree(C) {
+function toFahrenheit(C) {
     return C * 1.8 + 32
 }
-console.log(changeDegree(30))
+console.log(toFahrenheit(30))
 
 // Lesson 6
 console.log("===========Lesson6===========")
@@ -74,16 +79,17 @@ function getElectricityBill(kwh) {
     if (kwh <= 50) {
         total = kwh * 1678
     } else if (kwh <= 100) {
-        total = (50 * 1678) + ((kwh - 50) * 1743)
+        total = (50 * 1678) + ((kwh - 50) * 1734)
     } else if (kwh <= 200) {
-        total = (50 * 1678) + (50 * 1743) + ((kwh - 100) * 2014)
+        total = (50 * 1678) + (50 * 1734) + ((kwh - 100) * 2014)
     } else {
-        total = (50 * 1678) + (50 * 1743) + (100 * 2014) + ((kwh - 200) * 2536)
+        total = (50 * 1678) + (50 * 1734) + (100 * 2014) + ((kwh - 200) * 2536)
     }
     return total
 }
 
 console.log("Price " + getElectricityBill(51) + " VNĐ")
+console.log("Price " + getElectricityBill(500) + " VNĐ")
 
 
 

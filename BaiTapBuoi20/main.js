@@ -66,7 +66,7 @@ console.log("true sau khi ep kieu: ", typeof z)
 // Boolean("")          - false
 // Boolean("hello")     - true
 // Boolean(null)        - false
-// Boolean([]           - true (mảng rong)
+// Boolean([]           - true (mảng rỗng)
 
 //Phan 6
 console.log("==========Phan 6===========")
