@@ -1,5 +1,5 @@
 function isPerfectSquare(n) {
-    if (n < 0) return false;
+    if (n < 0) return false
     const i = n ** (1/2)
     return i * i === n
 }
