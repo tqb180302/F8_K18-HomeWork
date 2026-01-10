@@ -1,4 +1,4 @@
-function getTriangle (a, b, c) {
+function getTriangleType (a, b, c) {
 
     const isEquilateral = a === b && b === c
     const isIsosceles = a === b || b === c || a === c
@@ -21,9 +21,9 @@ function getTriangle (a, b, c) {
     }
 }
 
-console.log(getTriangle(0 , 1, 4)) //Invalid input
-console.log(getTriangle(3 , 1, 4)) //Not a triangle
-console.log(getTriangle(3, 4, 5)) // Right triangle
-console.log(getTriangle(2, 2, 2)) // Equilateral triangle
-console.log(getTriangle(2, 2, 3)) // Isosceles triangle
+console.log(getTriangleType(0 , 1, 4)) //Invalid input
+console.log(getTriangleType(3 , 1, 4)) //Not a triangle
+console.log(getTriangleType(3, 4, 5)) // Right triangle
+console.log(getTriangleType(2, 2, 2)) // Equilateral triangle
+console.log(getTriangleType(2, 2, 3)) // Isosceles triangle
 
