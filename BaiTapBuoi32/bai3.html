@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+
+<input type="text" id="text" placeholder="input text here">
+<button id="add">Add</button>
+
+<script>
+    const input = document.getElementById("text")
+    const btn = document.getElementById("add")
+
+    btn.addEventListener("click", () => {
+        const InputValue = input.value
+        const newP = document.createElement("p")
+        newP.innerText = InputValue
+        document.body.appendChild(newP)
+        input.value = ""
+    })
+</script>
+
+</body>
+</html>

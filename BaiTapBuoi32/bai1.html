@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1</title>
+</head>
+<body>
+<button id="btn">Add paragraph</button>
+
+<script>
+    const button = document.getElementById("btn")
+
+    button.addEventListener("click", () => {
+        const newParagraph = document.createElement("p")
+        newParagraph.textContent = "Hello DOM"
+        document.body.appendChild(newParagraph)
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .deleteBtn {
+      font-size: 20px;
+      color: black;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    .deleteBtn:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <li>1<button class="deleteBtn">&times</button></li>
+  <li>2<button class="deleteBtn">&times</button></li>
+  <li>3<button class="deleteBtn">&times</button></li>
+</ul>
+<script>
+
+  let deleteItem = document.querySelectorAll('.deleteBtn')
+  deleteItem.forEach(btn => {
+    btn.addEventListener("click", () => {
+      let listItem = btn.parentElement
+      listItem.remove()
+    })
+  })
+</script>
+</body>
+</html>

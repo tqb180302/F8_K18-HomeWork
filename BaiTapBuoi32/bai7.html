@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai7</title>
+  <style>
+    .todo-text {
+      margin-right: 10px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<input type="text" id="todo" placeholder="What do you want to do?">
+<button id="addTodo">Add</button>
+<ul id="todoList"></ul>
+
+<script>
+  const input = document.getElementById("todo")
+  const btn = document.getElementById("addTodo")
+  const ul = document.getElementById("todoList")
+
+  btn.addEventListener("click", () => {
+
+    if (input.value.trim() === "") {
+      alert("Please enter a value")
+      return
+    }
+    const li = document.createElement("li")
+    const span = document.createElement("span")
+    span.innerText = input.value
+    span.className = "todo-text"
+
+
+    span.addEventListener("click", () => {
+      span.classList.toggle("completed")
+    })
+
+    const deleteBtn = document.createElement("button")
+    deleteBtn.innerText = "Delete"
+    deleteBtn.addEventListener("click", () => {
+      li.remove()
+    })
+
+    li.appendChild(span)
+    li.appendChild(deleteBtn)
+    ul.appendChild(li)
+
+    input.value = ""
+  })
+</script>
+</body>
+</html>

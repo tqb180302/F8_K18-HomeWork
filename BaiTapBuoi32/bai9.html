@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 9: Todo Nâng Cao</title>
+  <style>
+    body {
+      margin: 20px;
+    }
+
+
+    .filter-section {
+      background-color: #f0f0f0;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+
+    .task-text {
+      flex-grow: 1;
+      margin-right: 15px;
+    }
+
+    .btn-done {
+      background-color: gold;
+      border: 1px solid #daa520;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-right: 5px;
+      border-radius: 3px;
+    }
+
+    .btn-done.completed {
+      background-color: mediumseagreen;
+      color: white;
+      border-color: green;
+    }
+
+    .btn-delete {
+      background-color: tomato;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="filter-section">
+  <h3>Search and filter</h3>
+  <input type="text" id="searchInput" placeholder="Find task">
+
+  <input type="checkbox" id="checkDone">
+</div>
+
+<div>
+  <h3>Add task</h3>
+  <input type="text" id="todoInput" placeholder="What do you want to do?">
+  <button id="addBtn">Add</button>
+</div>
+
+<ul id="todoList"></ul>
+
+<script>
+
+  const todoInput = document.getElementById("todoInput")
+  const addBtn = document.getElementById("addBtn")
+  const todoList = document.getElementById("todoList")
+  const searchInput = document.getElementById("searchInput")
+  const checkDone = document.getElementById("checkDone")
+
+  addBtn.onclick = function() {
+    const taskName = todoInput.value.trim()
+    if (taskName === "") {
+      alert("Please input a task")
+      return
+    }
+
+    const li = document.createElement("li")
+
+
+    const span = document.createElement("span")
+    span.className = "task-text"
+    span.innerText = taskName
+
+    const btnDone = document.createElement("button")
+    btnDone.className = "btn-done"
+    btnDone.innerText = "Done"
+    btnDone.onclick = function() {
+
+      btnDone.classList.toggle("completed")
+      filterTodos()
+    }
+
+
+    const btnDelete = document.createElement("button")
+    btnDelete.className = "btn-delete"
+    btnDelete.innerText = "Delete"
+
+    btnDelete.onclick = function() {
+      li.remove()
+    }
+
+    li.appendChild(span)
+    li.appendChild(btnDone)
+    li.appendChild(btnDelete)
+    todoList.appendChild(li)
+
+    todoInput.value = ""
+    filterTodos()
+  }
+
+
+  function filterTodos() {
+    const searchText = searchInput.value.toLowerCase()
+    const isOnlyDone = checkDone.checked
+    const items = todoList.querySelectorAll("li")
+    items.forEach(function(item) {
+      const text = item.querySelector(".task-text").innerText.toLowerCase()
+
+      const isItemDone = item.querySelector(".btn-done").classList.contains("completed")
+      const matchSearch = text.includes(searchText)
+
+
+      const matchStatus = isOnlyDone ? isItemDone : true
+
+      if (matchSearch && matchStatus) {
+        item.style.display = "flex"
+      } else {
+        item.style.display = "none"
+      }
+    })
+  }
+
+  searchInput.oninput = filterTodos
+  checkDone.onchange = filterTodos
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+</head>
+<body>
+<button id="addItem">Add item</button>
+<ul id="list"></ul>
+
+<script>
+    const buttonAdd = document.getElementById("addItem")
+    const listElement = document.getElementById("list")
+
+    let itemCount = 0;
+
+    buttonAdd.addEventListener("click", () => {
+
+        itemCount++
+        const newLi = document.createElement("li")
+        newLi.innerHTML = `Item ${itemCount}`
+        listElement.appendChild(newLi)
+    })
+</script>
+
+</body>
+</html>

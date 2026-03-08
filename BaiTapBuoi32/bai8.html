@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+    <style>
+        li {
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+            border: 1px solid gray;
+            list-style: none;
+            cursor: pointer;
+
+        }
+        .selected {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>Sản phẩm 1</li>
+    <li>Sản phẩm 2</li>
+    <li>Sản Phẩm 3</li>
+    <li>Sản Phẩm 4</li>
+    <li>Sản Phẩm 5</li>
+</ul>
+<script>
+    let listItems = document.querySelectorAll("ul li")
+    listItems.forEach(item => {
+        item.addEventListener("click", () => {
+            let currentSelected = document.querySelector(".selected")
+            if (currentSelected !== null) {
+                currentSelected.classList.remove("selected")
+            }
+            item.classList.add("selected")
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bai5</title>
+  <style>
+    .color-red {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<ul>
+  <li>Item A</li>
+  <li>Item B</li>
+  <li>Item C</li>
+</ul>
+
+<script>
+  const list = document.querySelectorAll("li")
+  list.forEach(item => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("color-red")
+    })
+  })
+</script>
+
+</body>
+</html>
