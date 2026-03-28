@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Storage - Thuần HTML/JS</title>
+</head>
+<body>
+<h1>Bài tập LocalStorage & SessionStorage (Thuần HTML/JS)</h1>
+
+<section id="exercise1">
+    <h2>Bài 1: Lưu tên người dùng</h2>
+    <input id="nameInput" type="text" placeholder="Nhập tên của bạn" />
+    <button id="saveNameBtn">Lưu</button>
+    <button id="readNameBtn">Đọc</button>
+    <div>
+        Tên hiện tại: <strong id="nameDisplay">(chưa có)</strong>
+    </div>
+</section>
+
+<hr />
+
+<section id="exercise2">
+    <h2>Bài 2: Đếm lượt truy cập</h2>
+    <h3 id="visitHeading">Bạn đã truy cập trang này 0 lần.</h3>
+    <button id="resetVisitsBtn">Reset bộ đếm</button>
+</section>
+
+<hr />
+
+<section id="exercise3">
+    <h2>Bài 3: Giỏ hàng SessionStorage</h2>
+    <div>
+        <p>Số sản phẩm: <span id="cartCount">0</span></p>
+        <p><strong>Tổng tiền: <span id="cartTotal">0</span> VND</strong></p>
+        <button id="clearCartBtn">Xóa toàn bộ</button>
+    </div>
+
+    <h3>Danh sách sản phẩm</h3>
+    <div id="productsContainer"></div>
+
+    <h3>Chi tiết giỏ hàng</h3>
+    <div id="cartItems"></div>
+</section>
+
+<script>
+    // ================= BÀI 1 =================
+    const nameInput = document.getElementById("nameInput");
+    const nameDisplay = document.getElementById("nameDisplay");
+    const NAME_KEY = "username";
+
+    function updateNameUI(name) {
+        nameDisplay.textContent = name || "(chưa có)";
+        nameInput.value = name || "";
+    }
+
+    function saveName() {
+        const v = nameInput.value.trim();
+        if (!v) return alert("Vui lòng nhập tên");
+        localStorage.setItem(NAME_KEY, v);
+        updateNameUI(v);
+    }
+
+    function readName(isManualClick = false) {
+        const v = localStorage.getItem(NAME_KEY);
+        if (v) {
+            updateNameUI(v);
+        } else {
+            updateNameUI("");
+            if (isManualClick) alert("Chưa lưu tên nào trong localStorage");
+        }
+    }
+
+    document.getElementById("saveNameBtn").addEventListener("click", saveName);
+    document.getElementById("readNameBtn").addEventListener("click", () => readName(true));
+
+    // ================= BÀI 2 =================
+    const visitHeading = document.getElementById("visitHeading");
+    const VISIT_KEY = "visitCount";
+
+    function handleVisit() {
+        let count = parseInt(localStorage.getItem(VISIT_KEY), 10) || 0;
+        count++;
+        localStorage.setItem(VISIT_KEY, count);
+        renderVisitCount(count);
+    }
+
+    function renderVisitCount(count) {
+        visitHeading.textContent = `Bạn đã truy cập trang này ${count} lần.`;
+    }
+
+    document.getElementById("resetVisitsBtn").addEventListener("click", () => {
+        localStorage.setItem(VISIT_KEY, "0");
+        renderVisitCount(0);
+    });
+
+    // ================= BÀI 3 =================
+    const products = [
+        { id: "p1", name: "Sản phẩm A", price: 120000 },
+        { id: "p2", name: "Sản phẩm B", price: 80000 },
+        { id: "p3", name: "Sản phẩm C", price: 50000 },
+    ];
+
+    const PRODUCTS_CONTAINER = document.getElementById("productsContainer");
+    const CART_ITEMS = document.getElementById("cartItems");
+    const CART_COUNT = document.getElementById("cartCount");
+    const CART_TOTAL = document.getElementById("cartTotal");
+    const CART_KEY = "cart";
+
+    function renderProducts() {
+        PRODUCTS_CONTAINER.innerHTML = products.map(p => `
+            <div>
+                <p><strong>${p.name}</strong> - Giá: ${p.price.toLocaleString('vi-VN')} đ</p>
+                <button onclick="updateCartItem('${p.id}', 1)">+ Thêm vào giỏ</button>
+            </div>
+        `).join('');
+    }
+
+    function getCart() {
+        const raw = sessionStorage.getItem(CART_KEY);
+        return raw ? JSON.parse(raw) : {};
+    }
+
+    function saveCart(cart) {
+        sessionStorage.setItem(CART_KEY, JSON.stringify(cart));
+    }
+
+    function updateCartItem(productId, change) {
+        const cart = getCart();
+        cart[productId] = (cart[productId] || 0) + change;
+
+        if (cart[productId] <= 0) {
+            delete cart[productId];
+        }
+
+        saveCart(cart);
+        renderCart();
+    }
+
+    function renderCart() {
+        const cart = getCart();
+        let totalCount = 0;
+        let totalPrice = 0;
+        let cartHTML = '';
+
+        for (const id in cart) {
+            const qty = cart[id];
+            const prod = products.find((p) => p.id === id);
+            if (!prod) continue;
+
+            totalCount += qty;
+            totalPrice += (prod.price * qty);
+
+            cartHTML += `
+            <div>
+                <p><strong>${prod.name}</strong> (${prod.price.toLocaleString('vi-VN')} đ / sp)</p>
+                <div>
+                    <button onclick="updateCartItem('${id}', -1)">-</button>
+                    <span> Số lượng: ${qty} </span>
+                    <button onclick="updateCartItem('${id}', 1)">+</button>
+                </div>
+            </div>
+            <br/>
+          `;
+        }
+
+        if (totalCount === 0) {
+            CART_ITEMS.innerHTML = '<p>Giỏ hàng đang trống.</p>';
+        } else {
+            CART_ITEMS.innerHTML = cartHTML;
+        }
+
+        CART_COUNT.textContent = totalCount;
+        CART_TOTAL.textContent = totalPrice.toLocaleString('vi-VN');
+    }
+
+    document.getElementById("clearCartBtn").addEventListener("click", () => {
+        if (!confirm("Bạn có chắc chắn muốn xóa toàn bộ giỏ hàng?")) return;
+        sessionStorage.removeItem(CART_KEY);
+        renderCart();
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        readName();          // Bài 1
+        handleVisit();       // Bài 2
+        renderProducts();    // Bài 3
+        renderCart();        // Bài 3
+    });
+</script>
+</body>
+</html>
